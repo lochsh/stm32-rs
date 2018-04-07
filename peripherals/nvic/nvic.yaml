@@ -2,160 +2,40 @@
 "NVIC":
   ISER?:
     SETENA:
-      Disabled: [0, "Interrupt disabled"]
-      Enabled: [1, "Interrupt enabled"]
+      _write:
+        Enabled: [1, "Interrupts enabled"]
+      _read:
+        Disabled: [0, "Interrupt disabled"]
+        Enabled: [1, "Interrupt enabled"]
 
   ICER?:
     CLRENA:
+      _write:
+        Disabled: [1, "Interrupt disabled"]
+      _read:
+        Disabled: [0, "Interrupt disabled"]
+        Enabled: [1, "Interrupt enabled"]
 
-  ISPR0:
+  ISPR?:
     SETPEND:
+      _write:
+        Pending: [1, "Sets interrupt state to pending"]
+      _read:
+        NotPending: [0, "Interrupt is not pending"]
+        Pending: [1, "Interrupt is pending"]
 
-  ISPR1:
-    SETPEND:
-
-  ISPR2:
-    SETPEND:
-
-  ICPR0:
+  ICPR?:
     CLRPEND:
+      _write:
+        NotPending: [1, "Remove pending state on interrupt"]
+      _read:
+        NotPending: [0, "Interrupt is not pending"]
+        Pending: [1, "Interrupt is pending"]
 
-  ICPR1:
-    CLRPEND:
-
-  ICPR2:
-    CLRPEND:
-
-  IABR0:
+  IABR?:
     ACTIVE:
 
-  IABR1:
-    ACTIVE:
-
-  IABR2:
-    ACTIVE:
-
-  IPR0:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR1:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR2:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR3:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR4:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR5:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR6:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR7:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR8:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR9:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR10:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR11:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR12:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR13:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR14:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR15:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR16:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR17:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR18:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR19:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
-
-  IPR20:
+  IPR?:
     IPR_N3:
     IPR_N2:
     IPR_N1:
