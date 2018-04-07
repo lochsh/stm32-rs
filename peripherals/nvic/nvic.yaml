@@ -1,107 +1,172 @@
-"NVIC*":
-  ICTR:
+
+"NVIC":
   ISER0:
+    SETENA:
+
   ISER1:
+    SETENA:
+
   ISER2:
-  ISER3:
-  ISER4:
-  ISER5:
-  ISER6:
-  ISER7:
+    SETENA:
 
   ICER0:
+    CLRENA:
+
   ICER1:
+    CLRENA:
+
   ICER2:
-  ICER3:
-  ICER4:
-  ICER5:
-  ICER6:
-  ICER7:
+    CLRENA:
 
   ISPR0:
+    SETPEND:
+
   ISPR1:
+    SETPEND:
+
   ISPR2:
-  ISPR3:
-  ISPR4:
-  ISPR5:
-  ISPR6:
-  ISPR7:
+    SETPEND:
 
   ICPR0:
+    CLRPEND:
+
   ICPR1:
+    CLRPEND:
+
   ICPR2:
-  ICPR3:
-  ICPR4:
-  ICPR5:
-  ICPR6:
-  ICPR7:
+    CLRPEND:
 
   IABR0:
+    ACTIVE:
+
   IABR1:
+    ACTIVE:
+
   IABR2:
-  IABR3:
-  IABR4:
-  IABR5:
-  IABR6:
-  IABR7:
+    ACTIVE:
 
   IPR0:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR1:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR2:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR3:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR4:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR5:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR6:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR7:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR8:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR9:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR10:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR11:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR12:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR13:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR14:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR15:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR16:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR17:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR18:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR19:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
+
   IPR20:
-  IPR21:
-  IPR22:
-  IPR23:
-  IPR24:
-  IPR25:
-  IPR26:
-  IPR27:
-  IPR28:
-  IPR29:
-  IPR30:
-  IPR31:
-  IPR32:
-  IPR33:
-  IPR34:
-  IPR35:
-  IPR36:
-  IPR37:
-  IPR38:
-  IPR39:
-  IPR40:
-  IPR41:
-  IPR42:
-  IPR43:
-  IPR44:
-  IPR45:
-  IPR46:
-  IPR47:
-  IPR48:
-  IPR49:
-  IPR50:
-  IPR51:
-  IPR52:
-  IPR53:
-  IPR54:
-  IPR55:
-  IPR56:
-  IPR57:
-  IPR58:
-  IPR59:
+    IPR_N3:
+    IPR_N2:
+    IPR_N1:
+    IPR_N0:
