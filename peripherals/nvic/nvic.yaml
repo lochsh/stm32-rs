@@ -1,21 +1,11 @@
 
 "NVIC":
-  ISER0:
+  ISER?:
     SETENA:
+      Disabled: [0, "Interrupt disabled"]
+      Enabled: [1, "Interrupt enabled"]
 
-  ISER1:
-    SETENA:
-
-  ISER2:
-    SETENA:
-
-  ICER0:
-    CLRENA:
-
-  ICER1:
-    CLRENA:
-
-  ICER2:
+  ICER?:
     CLRENA:
 
   ISPR0:
