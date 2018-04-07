@@ -34,12 +34,8 @@
 
   IABR?:
     ACTIVE:
-      _read:
-        NotActive: [0, "Interrupt not active"]
-        Active: [1, "Interrupt active"]
+      NotActive: [0, "Interrupt not active"]
+      Active: [1, "Interrupt active"]
 
   IPR?:
-    IPR_N3:
-    IPR_N2:
-    IPR_N1:
-    IPR_N0:
+    IPR_N[0123]: [0, 255]
