@@ -5,12 +5,12 @@ Copyright 2017 Adam Greig.
 Licensed under the MIT and Apache 2.0 licenses. See LICENSE files for details.
 """
 
-import yaml
-import os.path
 import argparse
-import xml.etree.ElementTree as ET
-from fnmatch import fnmatch
 from collections import OrderedDict
+from fnmatch import fnmatch
+import os.path
+import xml.etree.ElementTree as ET
+import yaml
 
 
 # Set up pyyaml to use ordered dicts so we generate the same
@@ -279,8 +279,17 @@ def process_field_range(pname, rtag, fspec, field):
 
 def process_register_field(pname, rtag, fspec, field):
     """Work through a field, handling either an enum or a range."""
+
     if isinstance(field, dict):
-        process_field_enum(pname, rtag, fspec, field)
+        usages = ("_read", "_write")
+
+        if not any(u in field for u in usages):
+            process_field_enum(pname, rtag, fspec, field)
+
+        for usage in (u for u in usages if u in field):
+            field[usage]["_usage"] = usage.replace("_", "")
+            process_field_enum(pname, rtag, fspec, field[usage])
+
     elif isinstance(field, list) and len(field) == 2:
         process_field_range(pname, rtag, fspec, field)
 
